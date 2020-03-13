@@ -5,6 +5,7 @@
   "description": "React component implementation of the Drift chat widget for websites",
   "main": "./dist/react-drift-web.min.js",
   "scripts": {
+    "lint": "tslint -c tslint.json -p tsconfig.json",
     "dist": "webpack --config webpack.conf.js --progress"
   },
   "repository": {
@@ -29,6 +30,7 @@
   "devDependencies": {
     "@types/react": "^16.9.23",
     "ts-loader": "^6.2.1",
+    "tslint": "^6.1.0",
     "typescript": "^3.8.3",
     "webpack": "^4.42.0",
     "webpack-cli": "^3.3.11",

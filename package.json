@@ -1,0 +1,29 @@
+{
+  "private": false,
+  "name": "react-drift-web",
+  "version": "1.0.0",
+  "description": "React component implementation of the Drift chat widget for websites",
+  "main": "./dist/react-drift-web.min.js",
+  "scripts": {
+    "dist": "webpack --config webpack.conf.js --progress"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alexsabdev/react-drift-web.git"
+  },
+  "keywords": [
+    "react",
+    "drift"
+  ],
+  "author": "Alex Sabanin <alexander.sabanin@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/alexsabdev/react-drift-web/issues"
+  },
+  "homepage": "https://github.com/alexsabdev/react-drift-web#readme",
+  "files": [
+    "dist/*",
+    "package.json",
+    "LICENSE"
+  ]
+}

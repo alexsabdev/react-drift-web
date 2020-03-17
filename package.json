@@ -1,12 +1,14 @@
 {
   "private": false,
   "name": "react-drift-web",
-  "version": "1.0.0",
+  "version": "0.1.0",
   "description": "React component implementation of the Drift chat widget for websites",
-  "main": "./dist/react-drift-web.min.js",
+  "main": "./dist/index.min.js",
+  "types": "./dist/index.d.ts",
   "scripts": {
     "lint": "tslint -c tslint.json -p tsconfig.json",
-    "dist": "webpack --config webpack.conf.js --progress"
+    "test": "jest",
+    "dist": "rm -rf ./dist && webpack --config webpack.config.js --progress"
   },
   "repository": {
     "type": "git",
@@ -28,7 +30,12 @@
     "LICENSE"
   ],
   "devDependencies": {
+    "@types/jest": "^25.1.4",
+    "@types/node": "^13.9.1",
     "@types/react": "^16.9.23",
+    "@types/react-dom": "^16.9.5",
+    "jest": "^25.1.0",
+    "ts-jest": "^25.2.1",
     "ts-loader": "^6.2.1",
     "tslint": "^6.1.0",
     "typescript": "^3.8.3",
@@ -37,7 +44,7 @@
     "webpack-merge": "^4.2.2"
   },
   "dependencies": {
-    "@types/node": "^13.9.1",
-    "react": "^16.13.0"
+    "react": "^16.0.0",
+    "react-dom": "^16.0.0"
   }
 }
